@@ -27,7 +27,7 @@ export class CafeComponent implements OnInit {
   }
 
   getTotalOriginCoffee(){
-    return this.cafes.filter((cafe) => cafe.tipo === 'Cafe de Origen').length;
+    return this.cafes.filter((cafe) => cafe.tipo === 'Café de Origen').length;
   }
 
   getTotalBlendCoffee(){
