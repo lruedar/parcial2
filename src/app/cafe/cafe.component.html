@@ -32,6 +32,12 @@
     </table>
   </div>
 
+
+  <caption>
+    <p>Total café de origen: {{ getTotalOriginCoffee() }}</p>
+    <p>Total café blend: {{ getTotalBlendCoffee() }}</p>
+  </caption>
+
   <div *ngIf="selected" class="col-md-auto p-0 ms-4">
     <app-cafe-detail [cafeDetail]="selectedCafe"></app-cafe-detail>
   </div>

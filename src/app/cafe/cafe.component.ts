@@ -26,6 +26,14 @@ export class CafeComponent implements OnInit {
     this.selected = true;
   }
 
+  getTotalOriginCoffee(){
+    return this.cafes.filter((cafe) => cafe.tipo === 'Cafe de Origen').length;
+  }
+
+  getTotalBlendCoffee(){
+    return this.cafes.filter((cafe) => cafe.tipo === 'Blend').length;
+  }
+
   ngOnInit() {
     this.getCafes();
   }
